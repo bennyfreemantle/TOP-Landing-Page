@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700:900&display=swap");
+
+:root {
+  --dark-background: #1f2937;
+  --secondary-text: #e5e7eb;
+  --blue-accent: #3882f6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+.navigation .logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.navigation nav ul {
+  display: flex;
+  gap: 16px;
+}
+
+.navigation nav ul li {
+  list-style-type: none;
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-text);
+  font-size: 18px;
+}
+
+.hero {
+  margin: 80px 0 80px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  gap: 32px;
+}
+
+.hero .hero-about {
+  width: 40%;
+}
+
+.hero .hero-about h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
+.hero .hero-about p {
+  font-size: 18px;
+  color: var(--secondary-text);
+}
+
+.hero .hero-about input[type="button"] {
+  background-color: var(--blue-accent);
+  color: #f9faf8;
+  font-size: 18px;
+  border: none;
+  padding: 0.5em 2em 0.5em 2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero .hero-img {
+  width: 60%;
+}
+
+.hero .hero-img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* End of hero section */
+
+/* Start of main section */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+  margin: 40px 0 80px 0;
+}
+
+.main-container .title h1 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.main-container .carrosell-cards {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.main-container .carrosell-cards .card {
+  width: 25%;
+  text-align: center;
+}
+
+.main-container .carrosell-cards .card img {
+  width: 200px;
+  height: 200px;
+}
+
+.main-container .carrosell-cards .card p {
+  font-size: 18px;
+  color: #1f2937;
+}
