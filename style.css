@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700:900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 :root {
   --dark-background: #1f2937;
   --secondary-text: #e5e7eb;
@@ -25,6 +24,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
   width: 100%;
 }
 
@@ -114,8 +114,10 @@ main {
 .main-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
   max-width: 960px;
+  padding: 10px;
   width: 100%;
   margin: 40px 0 80px 0;
 }
@@ -128,21 +130,109 @@ main {
 
 .main-container .carrosell-cards {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 .main-container .carrosell-cards .card {
-  width: 25%;
   text-align: center;
-}
-
-.main-container .carrosell-cards .card img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  flex: 1;
 }
 
 .main-container .carrosell-cards .card p {
   font-size: 18px;
   color: #1f2937;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #e5e7eb;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 960px;
+  width: 100%;
+  margin: 80px 0 80px 0;
+}
+
+.quote {
+  padding: 0 40px 20px 0;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote-author {
+  padding: 0 40px 0 40px;
+  align-self: flex-end;
+  color: #1f2937;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 960px;
+  width: 100%;
+  margin: 80px 0 80px 0;
+  background-color: var(--blue-accent);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.cta-text {
+  padding: 20px;
+}
+
+.cta-text h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.cta-text p {
+  font-size: 18px;
+  color: var(--secondary-text);
+}
+
+.cta-button input[type="button"] {
+  font-size: 18px;
+  border: 1px solid var(--secondary-text);
+  background-color: var(--blue-accent);
+  color: var(--secondary-text);
+  padding: 0.5em 2em 0.5em 2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--dark-background);
+}
+
+.footer-container p {
+  color: var(--secondary-text);
+  font-size: 18px;
 }
